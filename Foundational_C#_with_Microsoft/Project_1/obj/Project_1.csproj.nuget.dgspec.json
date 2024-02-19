@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\33787\\Documents\\Projects\\FCC_Certif\\Foundational_C#_with_Microsoft\\Project_1\\Project_1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\33787\\Documents\\Projects\\FCC_Certif\\Foundational_C#_with_Microsoft\\Project_1\\Project_1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\33787\\Documents\\Projects\\FCC_Certif\\Foundational_C#_with_Microsoft\\Project_1\\Project_1.csproj",
+        "projectName": "Project_1",
+        "projectPath": "C:\\Users\\33787\\Documents\\Projects\\FCC_Certif\\Foundational_C#_with_Microsoft\\Project_1\\Project_1.csproj",
+        "packagesPath": "C:\\Users\\33787\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\33787\\Documents\\Projects\\FCC_Certif\\Foundational_C#_with_Microsoft\\Project_1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\33787\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
