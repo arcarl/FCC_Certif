@@ -16,7 +16,7 @@ int[] gregorGrades = new int[] { 91, 91, 91, 91, 91, 91, 91 };
 
 
 // report header
-Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Student\t\tExam Score\tOverall\tGrade\tExtra Credit\n");
 
 // loop to calculate the grade of every student
 foreach (string name in students){
@@ -52,6 +52,7 @@ foreach (string name in students){
 
     // initialize the number of assignments
     int gradedAssignments = 0;
+    int originalGrade = 0;
 
     // accumulate the grades - and extra work
     foreach (int grade in gradesStudent)
@@ -60,14 +61,24 @@ foreach (string name in students){
         if (gradedAssignments <= examAssignments)
         {
             sumStudent += grade;
+            originalGrade += grade;
 
         }
         else
             sumStudent += grade / 10;
     }
 
-    // calculate the current grade 
+    // calculate the current grade and original grade
     decimal currentGrade = (decimal) sumStudent/examAssignments;
+    decimal originalCurrentGrade = (decimal) originalGrade/examAssignments;
+    
+    //casting in int for output format 
+    int intOriginalCurrentGrade = (int) originalCurrentGrade;
+
+    // calculate extra letter
+    decimal bonus = currentGrade - originalCurrentGrade;
+
+    // initializing the letter
     string currentLetter = "?";
 
     // assining the correct grade
@@ -108,6 +119,6 @@ foreach (string name in students){
         currentLetter = "D-";
 
     // printing the final grade
-    Console.WriteLine($"{name}\t\t{currentGrade}\t{currentLetter}");
+    Console.WriteLine($"{name}\t\t{originalCurrentGrade}\t\t{currentGrade}\t{currentLetter}\t{intOriginalCurrentGrade} ({bonus} pts)");
 }
 Console.ReadLine();
