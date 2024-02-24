@@ -272,6 +272,51 @@ if (readResult != null)
 
     case "3":
     // ensure animal ages and physical descp are complete
+        for (int i = 0; i < maxPets; i++)
+        {
+            // ignoring every animal if animalId is default value
+            if (ourAnimals[i, 0] != "ID #: ")
+            {
+
+                Console.WriteLine($"{ourAnimals[i,2][0]}");
+                // age
+                // checking if there is not the right type for age
+                if (ourAnimals[i, 2] == "") // default value
+                {
+                    do
+                    {
+                        // writing the age and casting it in the right type if possible
+                        Console.WriteLine($"Enter an age for {ourAnimals[i, 0]}");
+                        readResult = Console.ReadLine();
+                        if (readResult != null)
+                        {
+                            string age = readResult;
+                            ourAnimals[i, 2] = age;
+                        }
+                    } while (ourAnimals[i, 2] == "");
+                }
+                
+                // description
+                if (ourAnimals[i, 3] == "")
+                {
+                    do
+                    {
+                        // writing the physical description and casting it in the right type if possible
+                        Console.WriteLine($"Enter a physical description for {ourAnimals[i, 0]} (size, color, gender, weight, housebroken)");
+                        readResult = Console.ReadLine();
+                        if (readResult != null)
+                        {
+                            string description = readResult;
+                            ourAnimals[i, 3] = description;
+                        }
+                    } while (ourAnimals[i, 3] == "");
+                }
+
+            }
+        }
+        Console.WriteLine("Age and physical description fields are complete for all of our friends.");
+        Console.WriteLine("Press the Enter key to continue");
+        Console.ReadLine();
         break;
 
     case "4":
