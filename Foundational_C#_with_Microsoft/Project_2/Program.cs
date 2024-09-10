@@ -1,4 +1,4 @@
-﻿using System;
+﻿// See https://learn.microsoft.com/fr-fr/training/paths/get-started-c-sharp-part-2/  for more information about the content of the course
 
 // initialize variable - names - grades
 int examAssignments = 5;
